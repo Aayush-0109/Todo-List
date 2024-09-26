@@ -1,0 +1,137 @@
+body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    align-content: stretch;
+    background-color: rgb(65, 63, 72);
+    /* justify-content: ; */
+    color: aliceblue;
+}
+
+#left {
+    width: 50vw;
+    height: 100%;
+    position: fixed;
+    left: 0vw;
+
+}
+
+#right {
+    width: 50vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    left: 50vw;
+
+}
+
+#enter {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 50px;
+
+}
+
+#static {
+    position: relative;
+    top: 3%;
+    height: 25%;
+    width: 100%;
+    text-align: center;
+}
+
+#tasks {
+    height: 70%;
+    width: 100%;
+    overflow: scroll;
+    overflow-x: hidden;
+
+}
+
+#tasks::-webkit-scrollbar {
+    display: none;
+}
+
+button.cut {
+    background-color: rgb(231, 9, 9);
+    color:  aliceblue;;
+}
+
+.taskindividual {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    font-size: 7;
+}
+
+#taskcount {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+#sh {
+    display: flex;
+    justify-content: space-between;
+}
+button#TaskDone{
+     background-color:  rgb(65, 63, 72);
+     color: aliceblue; 
+     position: absolute;
+     top: 0%;
+     right: 0%;
+     border: 0;
+     border-bottom: 2px solid  aliceblue;
+     height: 26%;
+
+}
+
+div#popup{
+    margin: 0;
+     position: fixed;
+     left: 20vw;
+     top: 15vh;
+     height: 70vh;
+     width: 60vw;
+     background-color: rgb(65, 63, 72);
+    }
+
+.cut2{
+
+    background-color: rgb(223, 13, 13);
+    color: aliceblue;
+    border: 0;
+    position: absolute;
+    top: 0;
+    right:0;
+    height: 5%;
+    width: 5%;
+
+}
+#tasksDoneDiv{
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: aliceblue; 
+}
+#taskdoneid{
+    font-size: xx-large;
+    color: rgb(65, 63, 72);
+}
+#buttons{
+    display: flex;
+    justify-content: space-evenly;
+}
