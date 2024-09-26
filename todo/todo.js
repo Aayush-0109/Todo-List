@@ -10,6 +10,8 @@ tasksDone = JSON.parse(tasksDone);
 if (!tasksDone) {
     tasksDone = [];
 }
+
+// 5 recently completed tasks ->
 popupbutton.addEventListener("click", function () {
     let popupwindow = document.createElement("div");
     popupwindow.id = "popup";
@@ -57,6 +59,7 @@ function countUpdater() {
 }
 
 // WHEN ENTER IS PRESSED
+
 input.addEventListener("keypress", function (event) {
     if (event.key == "Enter") {
         input.value = input.value.trim();
@@ -127,7 +130,5 @@ function addTask(taskstr) {
     intask.appendChild(line);
     taskbar.appendChild(intask);
 
-    // Tasks done
-
-    const PopUp = function () { };
+   
 }
