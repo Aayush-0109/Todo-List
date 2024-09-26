@@ -21,7 +21,7 @@ popupbutton.addEventListener("click", function () {
     });
 
     let head = document.createElement("h1");
-    head.innerText = "Recent 5 Tasks Done";
+    head.innerText = "Recent 5 Tasks Completed";
     head.style.textAlign = "center";
     head.style.height = "15%";
     head.style.color = " aliceblue"
