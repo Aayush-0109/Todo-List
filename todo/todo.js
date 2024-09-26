@@ -4,7 +4,7 @@ let counter = document.getElementById("count");
 let taskarray = localStorage.getItem("tasks");
 let popupbutton = document.getElementById("TaskDone");
 let tasksDone = [];
-localStorage.setItem("tasksdone",JSON.stringify(tasksDone)); // 
+//  localStorage.setItem("tasksdone",JSON.stringify(tasksDone)); // To clear tasks done storage run this line one time
 tasksDone = localStorage.getItem("tasksdone");
 tasksDone = JSON.parse(tasksDone);
 if (!tasksDone) {
