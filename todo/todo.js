@@ -63,12 +63,14 @@ function countUpdater() {
 input.addEventListener("keypress", function (event) {
     if (event.key == "Enter") {
         input.value = input.value.trim();
+        if(input.value){
         taskarray.push(input.value);
         let jd = JSON.stringify(taskarray);
         localStorage.setItem("tasks", jd);
         addTask(input.value);
         input.value = "";
         countUpdater();
+    }
     }
 });
 
